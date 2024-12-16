@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg {
+    background-image: url("./Rectangle 18.png");
+    height: 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.form-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+form {
+    background-color: white;
+    padding: 40px 200px;
+    border-radius: 15px;
+}
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+form h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    margin: 40px 0;
+}
+.input-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.name {
+    width: 360px;
+    padding: 15px 20px;
+    border: 2px solid #A1A1A1;
+    border-radius: 10px;
+}
+textarea {
+    width: 100%;
+    height: 80px;
+    resize: none;
+    padding: 10px 20px;
+    border: 2px solid #A1A1A1;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    width: 170px;
+    padding: 15px 25px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(100deg, #D4145A, #3D5BF5);
+}
+button:hover {
+    background: linear-gradient(to right, #b31885, #2f5fd3);
+}
+
+
+
+@media (max-width: 1024px) {
+    .input-parent {
+        flex-direction: column;
+    }
+    form {
+        padding: 40px 200px;
+        max-width: 835px;
+    }
+    .name {
+        max-width: 350px;
+    }
+    button {
+        width: 170px;
+        text-align: center;
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 768px) {
+    .input-parent {
+        flex-direction: column;
+    }
+    form {
+        padding: 40px 100px;
+        max-width: 635px;
+    }
+    .name {
+        max-width: 250px;
+    }
+    button {
+        width: 140px;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+@media (max-width: 425px) {
+    .input-parent {
+        flex-direction: column;
+    }
+    form h1 {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+    .inputs {
+        gap: 12px;
+    }
+    .input-parent {
+        gap: 12px;
+    }
+    form {
+        padding: 30px 20px;
+        max-width: 350px;
+    }
+    .input-parent {
+        width: 100%;
+    }
+    textarea {
+        height: 95px;
+        padding: 8px 5px;
+        font-size: 10px;
+    }
+    input {
+         font-size: 10px;
+    }
+    button {
+        width: 120px;
+        text-align: center;
+        font-size: 14px;
+    }
+    ::placeholder {
+        text-align: center;
+    }
+}
